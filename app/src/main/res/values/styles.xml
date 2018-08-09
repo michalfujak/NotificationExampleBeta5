@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Action global theme = Base.Theme.AppCompat.Light.DialogWhenLarge -->
+    <!-- Colors Deep purple Material.styles.io.com and Google -->
+    <style name="AppTheme" parent="Base.Theme.AppCompat.Light.DialogWhenLarge">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/textColorPrimaryColor</item>
+        <item name="android:navigationBarColor">@color/colorNavigationNav</item>
+    </style>
+
+</resources>
