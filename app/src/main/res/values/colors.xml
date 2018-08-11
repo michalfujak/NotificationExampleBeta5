@@ -10,7 +10,11 @@
     <color name="button_submit_textColor">#EDE7F6</color>
     <!-- Button Submit Color END -->
     <!-- Layout Main Color START -->
-    <color name="layout_main_backgroud">#D1C4E9</color>
+    <color name="layout_main_backgroud">#EDE7F6</color>
     <color name="layout_main_textColor">#512DA8</color>
     <!-- Layout Main Color START -->
+    <!-- StyleToast START -->
+    <color name="Toast_background">#311B92</color>
+    <color name="Toast_text_color">#EDE7F6</color>
+    <!-- StyleToast END -->
 </resources>
