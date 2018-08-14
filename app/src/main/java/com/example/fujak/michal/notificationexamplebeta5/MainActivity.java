@@ -14,7 +14,7 @@ import com.muddzdev.styleabletoastlibrary.*;
 
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
-import static com.example.fujak.michal.notificationexamplebeta5.Notification_example.channel_01;
+import static com.example.fujak.michal.notificationexamplebeta5.Notification_example.CHANNEL_ID_001;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -34,14 +34,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 StyleableToast.makeText(view.getContext(), "Action click", R.style.ToastStyleView).show();
-                Notification notifi = new  NotificationCompat.Builder(view.getContext(), channel_01)
-                        .setSmallIcon(R.drawable.ic_drive)
+                Notification notification = new  NotificationCompat.Builder(view.getContext(), CHANNEL_ID_001)
+                        .setSmallIcon(R.drawable.ic_drive) // icon Notification, notification for application.
                         .setContentTitle("Title Notification Drive")
                         .setContentText("Message Notification Drive id Car")
-                        .setPriority(NotificationCompat.PRIORITY_LOW)
+                        .setPriority(NotificationCompat.PRIORITY_HIGH)
                         .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                         .build();
-                notificationManagerCompac.notify(1, notifi);
+                notificationManagerCompac.notify(1, notification);
 
             }
         });

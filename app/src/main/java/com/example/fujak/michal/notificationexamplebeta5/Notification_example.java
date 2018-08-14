@@ -8,15 +8,14 @@ import android.os.Build;
 
 public class Notification_example extends Application {
     //
-    public static final String channel_01 = "channel_01";
+    public static final String CHANNEL_ID_001 = "channel_01";
     //
     //
     @Override
     public void onCreate()
     {
+        // onCreate superMethod
         super.onCreate();
-        // Adds
-
     }
 
     private void CreateNotificationChannels()
@@ -24,12 +23,13 @@ public class Notification_example extends Application {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.O)
         {
             NotificationChannel channel1 = new NotificationChannel(
-                    channel_01,
-                    "channel_01",
-                    NotificationManager.IMPORTANCE_LOW
+                    CHANNEL_ID_001,
+                    "channel_01",                    // or R.string.CHANNEL_ID_001 == values attribute
+                    NotificationManager.IMPORTANCE_HIGH    // Notification build pririty
             );
             channel1.setDescription("This is channel 1");
 
+            // callback
             // NOTIFI MANAGER > SYSTEM_RECOVERY
             NotificationManager manager = getSystemService(NotificationManager.class);
             manager.createNotificationChannel(channel1);
